@@ -62,7 +62,6 @@ a {
 /* header */
 
 header {
-  background-color: pink;
   display: flex;
   justify-content: space-between;
   height: 79px;
@@ -70,7 +69,6 @@ header {
 }
 
 .header-logo img {
-  background-color: aqua;
   height: 19px;
   padding: 30px 50px 30px 50px;
 }
@@ -80,20 +78,20 @@ header {
   align-items: flex-end;
   justify-content: space-between;
   padding: 0px 50px 0px 50px;
-  background-color: yellowgreen;
   width: 344px;
   height: 35px;
 }
 
 .header-nav-item:hover {
+  border-top: solid 2px var(--main-color);
   color: var(--main-color);
+  padding-top: 14px;
 }
 
 @media screen and (max-width: 766px) {
   header {
     height: 115px;
     width: 100%;
-    background-color: wheat;
     flex-direction: column;
     align-items: center;
   }
@@ -108,18 +106,76 @@ header {
     padding: 0;
   }
 
-  .header-nav-item:hover {
-    border-bottom: 2px solid #0065fc;
-  }
-
   .header-nav-item {
     width: 50%;
     height: 33px;
-    background-color: aqua;
     display: flex;
     justify-content: center;
     border-bottom: 2px solid var(--main-bg-color);
   }
+
+  .header-nav-item:hover {
+    border-top: none;
+    padding-top: 0;
+    color: var(--main-color);
+    border-bottom: 2px solid var(--main-color);
+  }
+}
+
+/* infogroup */
+
+.infogroup {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+
+.searchbar {
+  display: flex;
+  width: 100%;
+  height: 49px;
+}
+
+.searchbar-icon {
+  display: flex;
+  height: 49px;
+  min-width: 50px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--main-bg-color);
+  border-radius: 15px 0px 0px 15px;
+  background-color: var(--main-bg-color);
+}
+
+.searchbar-icon i {
+  color: black;
+}
+
+.searchbar-form {
+  height: 49px;
+}
+
+.searchbar-btn {
+  width: auto;
+  height: 100%;
+  border: 1px solid var(--main-color);
+  border-radius: 0px 15px 15px 0px;
+  background-color: var(--main-color);
+  align-self: center;
+  color: white;
+}
+
+.filterbar {
+  display: flex;
+  align-items: center;
+}
+
+.filters {
+  display: flex;
+}
+
+.filter {
+  display: flex;
 }
 
 /****** Hebergements And Populaires ***********/
