@@ -75,15 +75,14 @@ header {
 
 .header-logo img {
   height: 19px;
-  padding: 30px 50px 30px 50px;
+  padding: 30px 50px 30px 0px;
 }
 
 .header-nav {
   display: flex;
   align-items: flex-end;
-  justify-content: space-between;
+  gap: 68px;
   padding: 0px 50px 0px 50px;
-  width: 344px;
   height: 35px;
 }
 
@@ -108,6 +107,7 @@ header {
     width: 100%;
     align-items: flex-start;
     padding: 0;
+    gap: 0;
   }
 
   .header-nav-item {
@@ -195,7 +195,6 @@ header {
   padding: 15px 16px 15px 16px;
   background-color: var(--main-color);
   font-size: 18px;
-  font-weight: bold;
   color: white;
 }
 
@@ -271,6 +270,8 @@ header {
 .filter {
   display: flex;
   align-items: center;
+
+  gap: 10px;
   height: 50px;
   border: 2px solid var(--main-bg-color);
   border-radius: 25px;
@@ -283,9 +284,8 @@ header {
   background-color: var(--filter-bg-color);
 }
 
-.filter i {
-  width: 22px;
-  height: 22px;
+.filter .fa-solid {
+  scale: 1.2;
 }
 
 .filter h2 {
@@ -303,6 +303,7 @@ header {
 .info-bar-icon i {
   display: flex;
   justify-content: center;
+  align-items: center;
   margin: auto;
   width: 24px;
   height: 24px;
@@ -334,8 +335,14 @@ header {
 .hebergements-cards {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 2;
+  grid-template-rows: 2fr;
   gap: 30px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.hebergements-cards .card {
+  height: 100%;
 }
 
 .hebergements-cards img {
@@ -411,7 +418,6 @@ header {
 
 .activities-cards {
   display: flex;
-  justify-content: space-between;
   gap: 30px;
 }
 
@@ -424,47 +430,75 @@ header {
   flex-direction: column;
   width: 100%;
   max-width: 297.5px;
-  height: 100%;
-  max-height: 439px;
+  /* height: 100%; */
+  /* max-height: 439px; */
   background-color: white;
   border-radius: 20px;
-
   filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
 }
 
 .activities-card .card-title {
   box-sizing: border-box;
   padding: 20px 19px 20px 19px;
+  height: 59px;
+}
+
+@media (max-width: 1024px) {
+  .activities-card {
+    max-height: 270px;
+  }
+  .activities-card img {
+    max-height: 200px;
+    width: 100%;
+  }
+  .activities-card .card-title {
+    padding: 20px 19px 20px 19px;
+    height: 94px;
+  }
 }
 
 .activities-card img {
   width: 100%;
-  height: 100%;
-  max-height: 86%;
+  height: 380px;
+  /* max-height: 86%; */
   border-radius: 20px 20px 0px 0px;
   object-fit: cover;
 }
 
 /* footer */
 
-footer {
+.footer {
   display: flex;
   height: 163px;
-  justify-content: space-between;
   background-color: var(--main-bg-color);
   margin-top: 35px;
 }
 
+@media screen and (max-width: 767.98px) {
+  .footer {
+    height: auto;
+    flex-direction: column;
+  }
+}
+
 .footer-item {
   display: flex;
+  flex: 1;
   flex-direction: column;
-  justify-content: space-around;
-  width: 33%;
   padding: 20px;
 }
 
 .footer-item h2 {
   font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.footer-item ul {
+  height: 100%;
+}
+
+.footer-item li {
+  margin-bottom: 15px;
 }
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
