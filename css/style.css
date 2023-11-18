@@ -359,7 +359,7 @@ header {
   display: flex;
   align-items: center;
   box-sizing: border-box;
-  padding: 20px 19px 20px 19px;
+  padding: 20px 15px 20px 15px;
   height: 59px;
 }
 
@@ -389,10 +389,6 @@ header {
 .footer-item h2 {
   font-size: 18px;
   margin-bottom: 15px;
-}
-
-.footer-item ul {
-  height: 100%;
 }
 
 .footer-item li {
