@@ -208,7 +208,7 @@ header {
 }
 
 .filter .fa-solid {
-  scale: 1.2;
+  scale: 1.15;
 }
 
 .filter h2 {
@@ -516,7 +516,7 @@ header {
 
   .search-bar-form input {
     text-align: start;
-    padding-left: 30px;
+    padding-left: 15px;
     width: 100%;
   }
 
@@ -623,5 +623,29 @@ header {
   .footer {
     height: auto;
     flex-direction: column;
+  }
+
+  /* test activities */
+
+  .activities-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .card-link {
+    width: 324px;
+  }
+
+  .hebergements-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .hebergements-cards a {
+    width: 324px;
   }
 }
