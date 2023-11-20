@@ -208,7 +208,7 @@ header {
 }
 
 .filter .fa-solid {
-  scale: 1.15;
+  transform: scale(1.2);
 }
 
 .filter h2 {
@@ -408,7 +408,6 @@ header {
     justify-content: space-between;
     height: auto;
     min-height: 91px;
-    max-width: 668px;
   }
 
   /* hebergements - tablette  */
