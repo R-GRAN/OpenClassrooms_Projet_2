@@ -374,7 +374,6 @@ header {
 
 .footer {
   display: flex;
-  height: 163px;
   background-color: var(--main-bg-color);
   margin-top: 35px;
 }
